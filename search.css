@@ -1,0 +1,108 @@
+*{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color:grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.all{
+    display: flex;
+ height: 100%;
+}
+.one{
+
+    height: 100%;
+    width: 260px;
+    background-color: #000;
+    /* position: fixed; */
+    /* overflow: scroll; */
+}
+.two{
+     height: 100%;
+    width: calc(100% - 260px);
+    overflow: hidden;
+    background-color: #343541;
+    /* position: fixed; */
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.one .container #item{
+    margin-left: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+    height: 30px;
+    width: 217px;
+    /* background-color: red; */
+    line-break: normal;
+    line-height: 1.5;
+    border-radius: 4%;
+    color:white;
+    cursor: pointer;
+    display: flex;
+}
+.one .container #item:hover{
+background-color: #9192a162;
+}
+.one .container #item:hover .icon-md{
+    /* background-color: #9192a162; */
+    opacity: 1;
+}
+.one .container #item:hover .icon-md2{
+    /* background-color: #9192a162; */
+    opacity: 1;
+}
+.icon-md{
+    stroke-width: 1.5;
+    height: 18px;
+    width: 18px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.1ms ease;
+    position: absolute;
+    /* top: 10%; */
+    margin-top: 12px;           
+    left: 15%;
+}
+.icon-md2{
+    stroke-width: 1.5;
+    height: 18px;
+    width: 18px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    /* top: 10%; */
+    margin-top: 12px;           
+    left: 17%;
+}
+.icon-md3 {
+    stroke-width: 1.5;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    margin-top: 2px;           
+    left: 17%;
+}
+
+.h-2\/3 {
+    height: 80%;
+    width: 35px;
+    border-radius: 50%;
+}
+/* .o1,.o2,.o3:hover{
+    background-color: #9192a162;;
+} */
+.one .container #item:hover .o1{
+    background-color: #9192a103;
+}
+.one .container #item:hover .o2{
+    background-color: #9192a103;
+}
+.o2{
+    margin-left: 2px;
+    color:white;
+}

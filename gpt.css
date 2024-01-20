@@ -1,0 +1,289 @@
+
+.top{
+    background-color: #343541;
+    color:white;
+    padding-top: 14px;
+    padding-left: 14px;
+    display: flex;
+    height: 35px;
+    width: 100%;
+    /* position:fixed; */
+}
+.mid{
+    background-color: #343541;
+    width: 100%;
+}
+.bottom{
+    background-color: #343541;
+}
+#l1{
+    flex:1;
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    background-color: #343541;
+    height: 20px;
+    cursor: pointer;
+}
+#l2{
+    margin-right: 30px;
+    background-color: #343541;
+    height: 30px;
+    
+}
+.icon-mdo {
+    stroke-width: 1.5;
+    height: 18px;
+    width: 18px;
+    background-color: #343541;
+}
+#l2 button{
+        border: 0.5px solid #565869;
+            background: none;
+            padding:5px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+}
+#l2 button:hover{
+    background-color: #40414f;
+}
+.mid{
+    height: 480px;
+    background-color: #343541;
+    justify-content: center;
+}
+.log{
+    height: 50px;
+    /* width: 250px; */
+    width: 100%;
+   margin:0 0 0 30%;
+    justify-content: center;
+    background-color: #343541;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+.log #image{
+    margin-top:150px;
+    border-radius: 50%;
+    width:80px;
+    height: 80px;
+    background-size: cover;
+}
+.boxes{
+    display: grid;
+    margin-top:250px;
+    margin-left: 150px;
+    margin-right: 150px;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    /* width: 100px; */
+    row-gap: 25px;
+    background-color: #343541;
+    column-gap: 12px;
+    /* overflow: hidden; */
+}
+.b1{
+    opacity:0.6;
+    background-color: #343541;
+    padding:9px 10px 10px 10px;
+    border:0.5px solid white;
+    border-radius: 5px;
+    overflow:hidden ;
+    color: white;
+    cursor: pointer;
+    
+    
+}
+.b1:hover .icon-sm{
+    opacity: 1;
+    border:1px solid white;
+    border-radius: 10px;
+}
+#t1{
+    color:white;
+    background-color: #343541;
+    font-weight: bold;
+    display: inline;
+}
+.icon-sm {
+    stroke-width: 1.5;
+    height: 18px;
+    width: 18px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.1ms ease;
+    position: absolute;
+    /* top: 10%; */
+    margin-top: 6px;           
+    margin-left: 320px;
+    
+     /* margin-right: 0px; */
+    border-color: black;
+}
+.text-token-text-primary {
+    color: #0f0f0f;
+    color: var(--text-primary);
+}
+.bottom{
+    height:45px;
+    width: 790px;
+    margin-top:20px;
+    margin-left: 13%;
+    background-color: #343541;
+}
+.bottom #inp{
+    width: 753px;
+    height: 45px;
+    background-color: #343541;
+    background: none;
+    border-radius: 10px;
+    border:1px solid white;
+    color: white;
+}
+
+.bottom #bot {
+    height: 30px;
+    background-color: #343541;
+    width: 30px;
+    background: none;
+    background-color: #343541;
+    position: relative;
+    margin-top: 8px;
+  /* margin-left: -40px; */
+  opacity: 0.4;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: -50px;
+}
+
+.mid select{
+    background-color: #343541;
+    color: white;
+}
+#myDropdown{
+    background-color: #343541;
+    color: white;
+    cursor: pointer;
+}
+.hush{
+    background-color: #343541;
+    align-content: center; 
+    margin-left: 60px; 
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .one{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin: 0 0 0 0;
+    }
+    .two{
+        padding: 0 0 0 0;
+        margin:0 0 0 0;
+        position: fixed;
+        justify-content: center;
+        width: 100%;
+    }
+    .two .top{
+        justify-content: center;
+        height: 20px;
+        font-size: medium;
+    }
+    .two .top #l2{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    .two .top #l1 #myDropdown{
+        /* visibility: hidden; */
+        height: 20px;
+        width: 70px;
+    }
+    .two .mid .log{
+        margin:0 0 0 25%;
+        padding:0 0 0 10px;
+        justify-content: top;
+        font-size: medium;
+    }
+    .two .mid .log #image{
+        margin-top:20%;
+    }
+    .two .mid .boxes{
+        margin:50% 0 0 0;
+        padding:0 0 0 0;
+        justify-content: left;
+        /* overflow: hidden; */
+    }
+    .two .mid .boxes .b1{
+        overflow: hidden;
+        height: 31px;
+    }
+    .two .mid .boxes .b1:hover{
+        visibility: hidden;
+    }
+    /* .bottom.input-container{   
+        margin:0 0 0 0; 
+        padding: 0 0 0 0;
+        top:0;
+         } */
+    /* .bottom input{
+        margin:0 0 0 0; 
+        padding: 0 0 0 0;
+        top:0;
+       
+        height: 10px;
+    } */
+    .bottom{
+        margin:0 0 0 0;
+        padding:0 0 0 0;
+    }
+    .bottom {
+        margin:100% 0 0 0;
+        padding: 0 0 0 0;
+        margin-top: 25px;
+        height: 30px;
+        bottom:0;
+        justify-content: baseline;
+        width: 100%;
+        
+    }
+    .bottom #inp{
+        padding-bottom: 0;
+        bottom: 0;
+        height: 120%;
+        width: 100%;
+    }
+    .bottom .hush{
+        bottom: 0;
+        padding: 0 0 0 0;
+        height: 10%;
+        /* height: 0;
+        width: 0;
+        visibility: hidden; */
+    }
+} 
+
+/* @media only screen and (max-width: 400px) {
+    .one, .two {
+        width: 100%;
+    }
+} */
+/* @media only screen and (max-width:600px){
+    .one{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    .two{
+        position: fixed;
+        width: 100%;
+    }
+} */
